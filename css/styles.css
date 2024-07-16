@@ -1,19 +1,50 @@
+/* Загальні стилі для тіла сторінки */
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #fff;
 }
 
+/* Видалення стандартних стилів списків */
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
 }
 
+/* Загальні стилі для посилань */
 a {
   text-decoration: none;
   color: inherit;
 }
-
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+/* Стилі для логотипу */
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -24,15 +55,29 @@ a {
   color: #4d5ae5;
 }
 
+/* Специфічні стилі для логотипу в хедері */
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
+}
 .header-logo .logo-part {
   color: #2e2f42;
 }
 
+/* Специфічні стилі для логотипу в футері */
 .footer-logo .logo-part {
   color: #f4f4fd;
 }
 
+/* Стилі для навігаційних посилань */
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 .nav-link {
+  display: block;
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
@@ -40,6 +85,7 @@ a {
   color: #2e2f42;
 }
 
+/* Ховери та фокуси для навігаційних і контактних посилань */
 .nav-link:hover,
 .nav-link:focus,
 .contacts-link:hover,
@@ -47,17 +93,28 @@ a {
   color: #404bbf;
 }
 
+/* Стилі для контактної інформації */
 .contacts {
   font-style: normal;
+  margin-left: auto;
 }
 
+/* Стилі для посилань контактів */
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 .contacts-link {
+  display: block;
+  padding: 24px 0;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #434455;
 }
 
+/* Стилі для заголовку героїчної секції */
 .hero-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -68,10 +125,12 @@ a {
   color: #fff;
 }
 
+/* Фон для героїчної секції */
 .hero {
   background: #2e2f42;
 }
 
+/* Стилі для кнопки в героїчній секції */
 .hero-button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -81,15 +140,16 @@ a {
   text-align: center;
   color: #fff;
   background-color: #4d5ae5;
-
   cursor: pointer;
 }
 
+/* Ховери та фокуси для кнопки в героїчній секції */
 .hero-button:hover,
 .hero-button:focus {
   background-color: #404bbf;
 }
 
+/* Стилі для підзаголовків у секції особливостей */
 .features-subtitle {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -99,6 +159,7 @@ a {
   color: #2e2f42;
 }
 
+/* Стилі для тексту в секції особливостей */
 .features-item-tex {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -108,10 +169,12 @@ a {
   color: #434455;
 }
 
+/* Фон для секції команди */
 .team {
   background-color: #f4f4fd;
 }
 
+/* Заголовок секції команди */
 .our-team {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -120,19 +183,21 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-
   text-transform: capitalize;
 }
 
+/* Фон для списку команди */
 .team-list {
   background-color: #ffffff;
 }
 
+/* Стилі для елементів списку команди */
 .team-list-item {
   text-align: center;
   background-color: #ffffff;
 }
 
+/* Стилі для імен членів команди */
 .team-member {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -143,6 +208,7 @@ a {
   color: #2e2f42;
 }
 
+/* Стилі для опису членів команди */
 .team-text {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -153,6 +219,7 @@ a {
   color: #434455;
 }
 
+/* Заголовок секції портфоліо */
 .title-portfolio {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -161,14 +228,15 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-
   text-transform: capitalize;
 }
 
+/* Стилі для елементів портфоліо */
 .info-portfolio {
   text-align: center;
 }
 
+/* Стилі для підзаголовків портфоліо */
 .caption-portfolio {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -178,6 +246,7 @@ a {
   color: #2e2f42;
 }
 
+/* Стилі для опису портфоліо */
 .desc-caption-portfolio {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -187,12 +256,14 @@ a {
   color: #434455;
 }
 
+/* Стилі для футера */
 .page-footer {
   background: #2e2f42;
   color: #f4f4fd;
   text-align: center;
 }
 
+/* Текст у футері */
 .footer-text {
   font-size: 16px;
   line-height: 150%;
