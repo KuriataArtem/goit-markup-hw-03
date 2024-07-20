@@ -218,12 +218,12 @@ a {
   letter-spacing: 0.02em;
   color: #434455;
 }
-.page-team {
+.team-list-item {
   background-color: #f4f4fd;
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.title-teame {
+.title-team {
   font-weight: 500;
   font-size: 36px;
   line-height: 1.11;
@@ -330,6 +330,9 @@ a {
 
 .logo-part {
   color: #f4f4fd;
+}
+.page-footer {
+  padding: 100px 0 100px;
 }
 
 .text-footer {
