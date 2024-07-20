@@ -223,6 +223,9 @@ a {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+.page-team {
+  padding: 120px 0;
+}
 .title-team {
   font-weight: 500;
   font-size: 36px;
@@ -238,7 +241,7 @@ a {
   display: flex;
   gap: 24px;
 }
-.person-page {
+.team-member {
   background-color: #fff;
   width: calc((100% - 3 * 24) / 4);
   border-radius: 0 0 4px 4px;
