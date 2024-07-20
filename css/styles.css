@@ -5,7 +5,9 @@ body {
   margin: 0;
   padding: 0;
 }
-
+img {
+  display: block;
+}
 ul,
 ol {
   list-style-type: none;
